@@ -58,7 +58,6 @@ git init .
 git clone https://github.com/joe19804/hope-bakery.git
 ```
 
-…or push an existing repository from the command line
 在github開了一個新的repository後, 希望連接到本機指定的資料夾
 ```
 git init .
