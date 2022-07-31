@@ -48,9 +48,33 @@ https://unsplash.com/photos/GFhqNX1gE9E?utm_source=email&utm_medium=referral&utm
 
 ## git操作
 
-…or push an existing repository from the command line
+本地資料夾初始化git
 ```
+git init .
+```
+
+將repository複製一份到本機
+```
+git clone https://github.com/joe19804/hope-bakery.git
+```
+
+…or push an existing repository from the command line
+在github開了一個新的repository後, 希望連接到本機指定的資料夾
+```
+git init .
 git remote add origin https://github.com/joe19804/hope-bakery.git
 git branch -M main
 git push -u origin main
+```
+
+刪除本機「綁定帳號」
+```
+git credential-manager uninstall
+```
+
+把資料從本地上傳到github repository
+```
+git add .
+git commit -m "更新內容說明"
+git push
 ```
