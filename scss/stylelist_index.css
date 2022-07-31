@@ -1,0 +1,883 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1000px;
+  height: 100%;
+  margin: auto;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*!
+ * Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Copyright 2022 Fonticons, Inc.
+ */
+:root, :host {
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+}
+
+@font-face {
+  font-family: 'Font Awesome 6 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.ttf") format("truetype");
+}
+
+.fas,
+.fa-solid {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+.header {
+  position: fixed;
+  background-repeat: no-repeat;
+  background-color: white;
+  width: 100%;
+  height: 80px;
+  z-index: 9;
+  border-bottom: rgba(0, 0, 0, 0.257);
+  overflow: hidden;
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: none;
+  padding: 0px 25px;
+}
+
+.header .container .img-logo {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.header .container .menu-item li {
+  display: inline-block;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.header .container .menu-item li:last-child {
+  margin-right: 0;
+}
+
+.header .container .menu-item li:hover {
+  color: #e2974e;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#menu-present {
+  width: 100%;
+  height: 80vh;
+  background-image: url(/images/section-bg.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: block;
+  background-attachment: scroll;
+}
+
+#menu-present .form-main {
+  position: absolute;
+  top: 50%;
+  margin-top: -250px;
+  margin-left: 10%;
+  width: 80%;
+  height: auto;
+  padding: 60px 20px;
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#menu-present .form-main .context-main {
+  min-width: 0;
+  font-size: 100px;
+  color: white;
+  text-align: center;
+  display: block;
+}
+
+#menu-present .form-main .context-line {
+  min-width: 0;
+  height: 30px;
+  padding: 7px 0px;
+  display: block;
+}
+
+#menu-present .form-main .context-line > div {
+  position: absolute;
+  font-size: 0;
+  width: 36%;
+  height: 1px;
+  background-color: white;
+  margin: 7px 32%;
+}
+
+#menu-present .form-main .context-slogan {
+  min-width: 0;
+  margin: 5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#menu-present .form-main .context-slogan .text {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0px 100px;
+}
+
+#menu-present .form-main .context-btn {
+  text-align: center;
+  min-width: 0;
+}
+
+#menu-present .form-main .context-btn button {
+  padding: 15px 35px;
+  background-color: rgba(220, 131, 42, 0.8);
+  color: #fff;
+  font-weight: 800;
+  font-size: 23px;
+  border: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 3px;
+  border-radius: 5px;
+}
+
+#menu-present .form-main .context-btn button:hover {
+  background-color: #e59a4f;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: unset;
+}
+
+#menu-about {
+  width: 100%;
+  height: 80vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.26);
+  position: relative;
+  display: block;
+  background-attachment: scroll;
+}
+
+#menu-about .form-main {
+  position: absolute;
+  top: 50%;
+  margin-top: -370px;
+  margin-left: 8%;
+  width: 80%;
+  height: auto;
+  padding: 60px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#menu-about .form-main > div {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+#menu-about .form-main .left-side {
+  max-width: 100%;
+  top: 0;
+  left: 0;
+  max-height: 100%;
+  text-align: center;
+  padding: 50px 65px 50px 65px;
+}
+
+#menu-about .form-main .left-side .title {
+  font-family: 'Yeseva One', cursive;
+  color: #393939;
+  font-size: 40px;
+  padding: 10px 10px;
+}
+
+#menu-about .form-main .left-side .slogan {
+  font-family: 'Lora', serif;
+  color: #e59a4f;
+  font-size: 15px;
+  padding: 0px 10px;
+  margin-bottom: 40px;
+}
+
+#menu-about .form-main .left-side .context {
+  font-family: 'Open Sans', sans-serif;
+  color: #393939;
+  text-indent: -1em;
+  padding: 0px 30px;
+  line-height: 30px;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+#menu-about .form-main .left-side .img {
+  padding: 20px 10px 10px 10px;
+  width: auto;
+  height: auto;
+}
+
+#menu-about .form-main .left-side .img img {
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 30px 10px rgba(10, 10, 10, 0.3);
+          box-shadow: 0px 0px 30px 10px rgba(10, 10, 10, 0.3);
+}
+
+#menu-about .form-main .left-side .name {
+  font-family: 'Yeseva One', cursive;
+  color: #393939;
+  font-weight: 600;
+  font-size: 23px;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 10px 10px 20px 10px;
+}
+
+#menu-about .form-main .left-side .text {
+  font-family: 'Open Sans', sans-serif;
+  color: #e59a4f;
+  padding: 0px 36px 0px 36px;
+}
+
+#menu-about .form-main .right-side {
+  background-size: cover;
+  max-width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+#menu-about .form-main .right-side .img {
+  width: 100%;
+  height: 100%;
+  margin: 50px 20px;
+}
+
+#menu-about .form-main .right-side .img img {
+  -webkit-box-shadow: 0px 25px 30px 10px rgba(10, 10, 10, 0.3);
+          box-shadow: 0px 25px 30px 10px rgba(10, 10, 10, 0.3);
+}
+
+#menu-about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  background-color: white;
+}
+
+#menu-advantage {
+  width: 100%;
+  height: 70vh;
+  background-image: url(/images/advantage-bg-1.jpg);
+  background-position: 100% 64%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: block;
+  background-attachment: scroll;
+}
+
+#menu-advantage > div {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+}
+
+#menu-advantage .form-main {
+  position: absolute;
+  top: 55%;
+  margin-top: -300px;
+  width: 80%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#menu-advantage .form-main > div {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+}
+
+#menu-advantage .form-main .left-side {
+  max-width: 80%;
+  max-height: 90%;
+  top: 0;
+  left: 0;
+  background-image: url(/images/advantage-1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#menu-advantage .form-main .left-side img {
+  max-width: 80%;
+  height: auto;
+  margin: 0;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#menu-advantage .form-main .right-side {
+  max-width: 80%;
+  max-height: 90%;
+  background-color: #fff;
+}
+
+#menu-advantage .form-main .right-side .right-top {
+  max-width: 100%;
+  height: 70%;
+  background-image: url(/images/advantage-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 25px;
+}
+
+#menu-advantage .form-main .right-side .right-top .title {
+  font-size: 40px;
+  font-family: 'Yeseva One', cursive;
+}
+
+#menu-advantage .form-main .right-side .right-top .slogan {
+  font-size: 15px;
+  color: #e2974e;
+  font-family: 'Lora', serif;
+  margin-top: 8px;
+}
+
+#menu-advantage .form-main .right-side .right-top .context {
+  font-family: 'Open Sans', sans-serif;
+  color: #393939;
+  display: block;
+  word-break: break-word;
+  text-indent: 0;
+  line-height: 30px;
+  text-align: left;
+  margin: 20px 0px;
+}
+
+#menu-advantage .form-main .right-side .right-top .items i {
+  color: #e2974e;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#menu-advantage .form-main .right-side .right-top .items i.active {
+  color: red;
+}
+
+#menu-advantage .form-main .right-side .right-top .items i:hover {
+  color: #e2974e;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#menu-advantage .form-main .right-side .right-down {
+  max-width: 100%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#menu-advantage .form-main .right-side .right-down .circle {
+  display: inline-block;
+}
+
+#menu-advantage .form-main .right-side .right-down .circle img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  -webkit-box-shadow: 0px 0px 40px 0px rgba(10, 10, 10, 0.3);
+          box-shadow: 0px 0px 40px 0px rgba(10, 10, 10, 0.3);
+}
+
+#menu-feature {
+  width: 100%;
+  height: 120vh;
+  background-color: rgba(200, 200, 200, 0.5);
+  position: relative;
+  display: block;
+  background-attachment: scroll;
+}
+
+#menu-feature .form-main {
+  position: absolute;
+  top: 50%;
+  margin-top: -550px;
+  margin-left: 8%;
+  margin-bottom: 0;
+  width: 80%;
+  padding-top: 20px;
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1200px;
+  width: calc(100% - 80px);
+}
+
+#menu-feature .form-main .main {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#menu-feature .form-main .title {
+  text-align: center;
+  font-size: 54px;
+  margin: 15px;
+  font-family: 'Yeseva One', cursive;
+}
+
+#menu-feature .form-main .context-slogan {
+  text-align: center;
+  color: #e2974e;
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-family: 'Lora', serif;
+}
+
+#menu-feature .form-main .divider {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#menu-feature .form-main .block {
+  height: 50px;
+  width: 100%;
+}
+
+#menu-feature .form-down {
+  min-height: 100%;
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#menu-feature .form-down > div {
+  -ms-flex-preferred-size: 35.3%;
+      flex-basis: 35.3%;
+}
+
+#menu-feature .form-down .form-left {
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px 0px;
+}
+
+#menu-feature .form-down .form-left .divider {
+  text-align: left;
+  margin: 20px 0px;
+}
+
+#menu-feature .form-down .form-left .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#menu-feature .form-down .form-left .left .circle {
+  text-align: center;
+}
+
+#menu-feature .form-down .form-left .left .circle img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  -webkit-box-shadow: 0px 0px 40px 0px rgba(10, 10, 10, 0.3);
+          box-shadow: 0px 0px 40px 0px rgba(10, 10, 10, 0.3);
+}
+
+#menu-feature .form-down .form-left .left .contant {
+  padding: 5px 0px 5px 20px;
+  text-align: left;
+}
+
+#menu-feature .form-down .form-left .left .contant .context-title {
+  font-size: 23px;
+}
+
+#menu-feature .form-down .form-left .left .contant .context {
+  font-size: 16px;
+}
+
+#menu-feature .form-down .form-left .left :last-child {
+  margin-bottom: 20px;
+}
+
+#menu-feature .form-down .form-center {
+  max-height: 100%;
+  background-image: url(/images/feature-center.jpg);
+  background-position: 60% 40%;
+  background-size: cover;
+  border: 10px solid #fff;
+}
+
+#menu-feature .form-down .form-right {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  min-height: 100%;
+  background-image: url(/images/feature-right.png);
+  background-position: 34% 100%;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+#menu-feature .form-down .form-right .contant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+#menu-feature .form-down .form-right .contant .name {
+  color: #e2974e;
+}
+
+#menu-feature .form-down .form-right .contant .number {
+  font-size: 68px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Yeseva One', cursive;
+}
+
+#menu-feature .form-down .form-right .contant .min {
+  font-size: 15px;
+  font-family: 'Lora', serif;
+  color: #66738D;
+}
+
+#menu-product {
+  width: 100%;
+  height: 80vh;
+}
+
+#menu-product .container {
+  max-width: none;
+}
+
+#menu-product .container .items {
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#menu-product .container .items li {
+  display: inline-block;
+  padding-right: 10px;
+  cursor: pointer;
+  color: #e2974e;
+  -webkit-transition: 1s;
+  transition: 1s;
+  font-weight: 700;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+#menu-product .container .items li.active {
+  color: #777777;
+}
+
+#menu-product .container .items li:hover {
+  color: #e2974e;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#menu-product .container .product-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  margin-top: 20px;
+}
+
+#menu-product .container .product-items .product-item {
+  max-width: 100%;
+  height: 100%;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#menu-product .container .product-items .product-item > span {
+  margin-bottom: 15px;
+}
+
+#menu-product .container .product-items .product-item img {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+#menu-product .container .product-items .product-item .product-btn {
+  margin: 0 30%;
+  width: 100px;
+  height: 40px;
+  background-color: rgba(220, 131, 42, 0.8);
+  color: #fff;
+  font-weight: 800;
+  font-size: 15px;
+  border: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: 'Ubuntu', sans-serif;
+  border-radius: 5px;
+}
+
+#menu-product .container .product-items .product-item .product-btn:hover {
+  background-color: #e59a4f;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: unset;
+}
+
+#menu-contactus {
+  width: 100%;
+  height: 80vh;
+  top: 0;
+  left: 0;
+  background-image: url(/images/contactus-bg.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: block;
+  background-attachment: scroll;
+}
+
+#menu-contactus .form-main {
+  position: absolute;
+  top: 50%;
+  margin-top: -300px;
+  margin-left: 15%;
+  width: 70%;
+  height: 300px;
+  padding: 60px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#menu-contactus .form-main > div {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+#menu-contactus .form-main .left-side {
+  margin: 0;
+  padding: 0;
+}
+
+#menu-contactus .form-main .left-side .title {
+  font-family: 'Yeseva One', cursive;
+  color: #ffffff;
+  font-size: 54px;
+  display: block;
+  text-align: center;
+  margin-top: 30%;
+}
+
+#menu-contactus .form-main .left-side .text {
+  font-family: 'Yeseva One', cursive;
+  color: #fdd99d;
+  font-size: 54px;
+  font-weight: 800;
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#menu-contactus .form-main .left-side .context {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  display: block;
+  word-break: break-word;
+  text-indent: -1em;
+  line-height: 30px;
+  margin: 50px 10px;
+  padding: 0px 50px;
+  text-align: center;
+}
+
+#menu-contactus .form-main .left-side .divider {
+  text-align: center;
+}
+
+#menu-contactus .form-main .right-side {
+  background-color: #f0f2ee;
+  height: 550px;
+}
+
+#menu-contactus .form-main .right-side .inside {
+  width: 400px;
+  height: 500px;
+  margin: 10px;
+  background-color: rgba(17, 16, 16, 0.257);
+}
+
+#menu-contactus .form-main .right-side .inside .circle {
+  text-align: center;
+}
+
+#menu-contactus .form-main .right-side .inside .circle img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  -webkit-box-shadow: 0px 0px 40px 0px rgba(10, 10, 10, 0.3);
+          box-shadow: 0px 0px 40px 0px rgba(10, 10, 10, 0.3);
+}
+
+#menu-contactus .form-main .right-side .inside .text {
+  font-family: 'Yeseva One', cursive;
+  color: #fdd99d;
+  font-size: 54px;
+  font-weight: 800;
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#menu-contactus .form-main .right-side .inside .context {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  display: block;
+  word-break: break-word;
+  text-indent: -1em;
+  line-height: 30px;
+  margin: 50px 10px;
+  padding: 0px 50px;
+  text-align: center;
+}
+
+#menu-contactus .form-main .right-side .inside .btn {
+  text-align: center;
+}
+
+#menu-contactus .form-main .right-side .inside .btn button {
+  width: 150px;
+  height: 50px;
+  background-color: rgba(22, 21, 19, 0.952);
+  color: #fdd99d;
+  font-weight: 400;
+  font-size: 18px;
+  border: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: 'Ubuntu', sans-serif;
+  border-radius: 5px;
+}
+
+#menu-contactus .form-main .right-side .inside .btn button:hover {
+  background-color: #e0aa73;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: unset;
+}
+/*# sourceMappingURL=stylelist_index.css.map */
