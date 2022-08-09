@@ -6,7 +6,7 @@ $link-color-gray: rgb(76, 71, 68);
 $link-color-brown: rgb(91, 73, 54);
 
 html,body {
-    background-color: #000;
+    // background-color: #000;
     scroll-behavior: smooth;
 }
 
@@ -385,7 +385,7 @@ html,body {
         position: absolute;
         top: 50%;
         margin-top: -450px;
-        margin-left: 8%;
+        margin-left: 10%;
         margin-bottom: 0;
         width: 80%;
         padding-top: 20px;
@@ -431,15 +431,13 @@ html,body {
         display: flex;  
         flex-direction: row;
 
-        >div {
-            flex-basis: 35.3%;
-        }
-
         .form-left {
+            flex: 1;
             display: flex;
             justify-content: center;
             flex-direction: column;
             margin: 20px 0px;
+            border: 1px solid #000;
 
             .divider {
                 text-align: left;
@@ -447,27 +445,31 @@ html,body {
             }
 
             .left {
+                max-width: 100%;
+                border: 1px solid red;
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-around;
                 align-items: center;
-                padding-right: 25px;
 
                 .circle {
-                    text-align: center;
                     img {
-                        width: 80px;
-                        height: 80px;
-                        border-radius: 60%;
-                        border: 2px solid #fff;
-                        box-shadow: 0px 0px 40px 0px rgba(10, 10, 10, 0.3);
+                        width: 64px;
+                        height: 64px;
+                        border-radius: 50%;
+                        object-fit: cover;
+
                     }
                 }
 
-                .context-container { 
-                    padding-left: 10px;
-                    text-align: left;
+                .context-container {
+                    flex: 1 1 0%;
+                    justify-content: flex-start;
+                    margin-left: 10px;
+                    padding-right: 10px;
+                    margin-bottom: 0;
                     .context-title {
                         font-size: 23px;
+                        margin-bottom: 10px;
                     }
         
                     .context {
@@ -475,14 +477,11 @@ html,body {
                         word-wrap: break-word;
                     }
                 }
-
-                :last-child {
-                    margin-bottom: 20px;
-                }
             }
         }
 
         .form-center {
+            flex: 1;
             max-height: 100%;
             background-image: url(/images/feature-center.jpg);
             background-position: 60% 40%;
@@ -491,6 +490,7 @@ html,body {
         }
 
         .form-right {
+            flex: 1;
             color: #121010;
             width: 100%;
             min-height: 100%;
@@ -508,7 +508,7 @@ html,body {
 
                 .name {
                     color: #e2974e;
-                    margin-top: 35px;
+                    margin-top: 18px;
                 }
                 
                 .number {
@@ -522,10 +522,6 @@ html,body {
                     font-size: 15px;
                     font-family: 'Lora', serif;
                     color: #66738D;
-                }
-
-                .block {
-                    height: 30px;
                 }
             }
         }   
@@ -637,7 +633,7 @@ html,body {
     .form-main {
         position: absolute;
         top: 50%;
-        margin-top: -300px;
+        margin-top: -350px;
         margin-left: 15%;
         width: 70%;
         height: 300px;
@@ -691,17 +687,20 @@ html,body {
         }
 
         .right-side {
-            background-color: rgb(240, 242, 238);
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            background-color:  #F0F2EE;
             height: 550px;
 
-            
             .inside {
-                width: 400px;
-                height: 500px;
-                margin: 10px;
-                background-color: rgba(17, 16, 16, 0.257);
+                min-width: 100%;
+                // height: 550px;
+                background-color: #fff;
+                border: 1px solid rgba(22, 21, 19, 0.5);
 
                 .circle {
+                    margin-top: 20px;
                     text-align: center;
                     img {
                         width: 80px;
