@@ -188,7 +188,6 @@ html, body {
   font-size: 23px;
   border: 0;
   cursor: pointer;
-  border-radius: 4px;
   font-family: "Ubuntu", sans-serif;
   letter-spacing: 3px;
   border-radius: 5px;
@@ -743,7 +742,7 @@ html, body {
   opacity: unset;
 }
 
-@media screen and (max-width: 740px) {
+@media (max-width: 767.98px) {
   .header .mobile-menu-icon {
     display: block;
   }
@@ -807,7 +806,58 @@ html, body {
     margin: 5px 28%;
   }
   #menu-present .form-main .context-slogan .text {
-    padding: 0px 10px;
-    font-size: 18px;
+    padding: 0;
+    font-size: 20px;
+  }
+  #menu-present .form-main .context-btn button {
+    padding: 15px 30px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  #menu-about {
+    height: 120vh;
+  }
+  #menu-about .form-main {
+    flex-direction: column;
+    margin-left: 10%;
+    margin-top: -540px;
+  }
+  #menu-about .form-main .left-side {
+    padding: 0;
+  }
+  #menu-about .form-main .left-side .title {
+    font-size: 35px;
+  }
+  #menu-about .form-main .left-side .slogan {
+    margin-bottom: 15px;
+  }
+  #menu-about .form-main .left-side .img {
+    margin: 10px;
+  }
+  #menu-about .form-main .left-side .name {
+    padding: 5px 5px 10px 5px;
+  }
+  #menu-about .form-main .left-side .text {
+    padding: 0px 18px 0px 18px;
+  }
+  #menu-about .form-main .right-side .img {
+    margin: 50px 30px;
+  }
+  #menu-advantage {
+    height: 125vh;
+  }
+  #menu-advantage .form-main {
+    flex-direction: column;
+    top: 25%;
+    margin-top: -440px;
+    margin-left: 20%;
+    height: 130%;
+  }
+  #menu-advantage .form-main .right-side .right-top {
+    padding: 30px;
+  }
+  #menu-advantage .form-main .right-side .right-top .slogan {
+    margin-top: 20px;
   }
 }/*# sourceMappingURL=stylelist_index.css.map */
