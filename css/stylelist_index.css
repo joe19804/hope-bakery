@@ -51,6 +51,7 @@ ul {
 
 html, body {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 .header {
@@ -84,6 +85,37 @@ html, body {
 .header .container .menu-item li:hover {
   color: #e2974e;
   transition: 1s;
+}
+.header .mobile-menu-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: none;
+}
+.header .mobile-menu-icon:hover > div {
+  background-color: #e2974e;
+}
+.header .mobile-menu-icon:hover > div:nth-child(1) {
+  transform: rotate(45deg);
+  position: relative;
+  top: 10px;
+}
+.header .mobile-menu-icon:hover > div:nth-child(2) {
+  display: none;
+  transition: unset;
+}
+.header .mobile-menu-icon:hover > div:nth-child(3) {
+  transform: rotate(-45deg);
+}
+.header .mobile-menu-icon > div {
+  width: 30px;
+  height: 5px;
+  background-color: rgba(0, 0, 0, 0.486);
+  margin-bottom: 5px;
+  transition: all 0.5s;
+}
+.header .mobile-menu-icon > div:last-child {
+  margin-bottom: 0;
 }
 
 #menu-present {
@@ -210,7 +242,7 @@ html, body {
   color: #e59a4f;
   font-size: 15px;
   padding: 0px 10px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 #menu-about .form-main .left-side .context {
   font-family: "Open Sans", sans-serif;
@@ -222,12 +254,17 @@ html, body {
   word-break: break-word;
 }
 #menu-about .form-main .left-side .img {
-  padding: 20px 10px 10px 10px;
+  margin: 25px;
   width: auto;
   height: auto;
+  text-align: center;
 }
 #menu-about .form-main .left-side .img img {
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
   box-shadow: 0px 0px 30px 10px rgba(10, 10, 10, 0.3);
 }
 #menu-about .form-main .left-side .name {
@@ -368,7 +405,7 @@ html, body {
 #menu-feature {
   width: 100%;
   height: 100vh;
-  background-color: rgba(200, 200, 200, 0.5);
+  background-color: rgba(205, 205, 205, 0.6);
   position: relative;
   display: block;
   background-attachment: scroll;
@@ -377,7 +414,7 @@ html, body {
   position: absolute;
   top: 50%;
   margin-top: -450px;
-  margin-left: 10%;
+  margin-left: 15%;
   margin-bottom: 0;
   width: 80%;
   padding-top: 20px;
@@ -413,8 +450,7 @@ html, body {
   margin-bottom: 20px;
 }
 #menu-feature .form-down {
-  min-height: 100%;
-  padding-top: 10px;
+  margin-top: 30px;
   display: flex;
   flex-direction: row;
 }
@@ -423,23 +459,24 @@ html, body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 20px 0px;
-  border: 1px solid #000;
+  padding: 30px 0px;
 }
 #menu-feature .form-down .form-left .divider {
-  text-align: left;
-  margin: 20px 0px;
+  text-align: center;
+  align-items: center;
+  padding-top: 10px;
+  margin: 10px 0px;
 }
 #menu-feature .form-down .form-left .left {
   max-width: 100%;
-  border: 1px solid red;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 #menu-feature .form-down .form-left .left .circle img {
-  width: 64px;
-  height: 64px;
+  border: 3px solid #fff;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -447,16 +484,17 @@ html, body {
 #menu-feature .form-down .form-left .left .context-container {
   flex: 1 1 0%;
   justify-content: flex-start;
-  margin-left: 10px;
-  padding-right: 10px;
+  margin-left: 20px;
+  padding-right: 15px;
   margin-bottom: 0;
 }
 #menu-feature .form-down .form-left .left .context-container .context-title {
   font-size: 23px;
   margin-bottom: 10px;
+  font-family: "Yeseva One", cursive;
 }
 #menu-feature .form-down .form-left .left .context-container .context {
-  font-size: 16px;
+  font-size: 18px;
   word-wrap: break-word;
 }
 #menu-feature .form-down .form-center {
@@ -471,13 +509,13 @@ html, body {
   flex: 1;
   color: #121010;
   width: 100%;
-  min-height: 100%;
+  height: 480px;
   background-image: url(/images/feature-right.png);
   background-position: 50% 100%;
   background-repeat: no-repeat;
   background-size: 50%;
   display: block;
-  padding-top: 5px;
+  padding-top: 15px;
 }
 #menu-feature .form-down .form-right .contant {
   display: flex;
@@ -486,7 +524,7 @@ html, body {
 }
 #menu-feature .form-down .form-right .contant .name {
   color: #e2974e;
-  margin-top: 18px;
+  margin-top: 25px;
 }
 #menu-feature .form-down .form-right .contant .number {
   font-size: 68px;
@@ -595,7 +633,7 @@ html, body {
   margin-left: 15%;
   width: 70%;
   height: 300px;
-  padding: 60px 20px;
+  padding: 60px 100px;
   display: flex;
   justify-content: space-between;
 }
@@ -642,12 +680,14 @@ html, body {
   display: flex;
   justify-content: center;
   background-color: #F0F2EE;
-  height: 550px;
+  height: 600px;
 }
 #menu-contactus .form-main .right-side .inside {
-  min-width: 100%;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  width: 100%;
   background-color: #fff;
-  border: 1px solid rgba(22, 21, 19, 0.5);
+  border: 1px solid rgba(22, 21, 19, 0.2);
 }
 #menu-contactus .form-main .right-side .inside .circle {
   margin-top: 20px;
@@ -662,9 +702,9 @@ html, body {
 }
 #menu-contactus .form-main .right-side .inside .text {
   font-family: "Yeseva One", cursive;
-  color: #fdd99d;
+  color: rgba(22, 21, 19, 0.5);
   font-size: 54px;
-  font-weight: 800;
+  font-weight: 700;
   display: block;
   text-align: center;
   margin-top: 30px;
@@ -676,8 +716,8 @@ html, body {
   word-break: break-word;
   text-indent: -1em;
   line-height: 30px;
-  margin: 50px 10px;
-  padding: 0px 50px;
+  margin: 20px 0px;
+  padding: 0px 20px;
   text-align: center;
 }
 #menu-contactus .form-main .right-side .inside .btn {
@@ -695,9 +735,79 @@ html, body {
   border-radius: 4px;
   font-family: "Ubuntu", sans-serif;
   border-radius: 5px;
+  margin-top: 20px;
 }
 #menu-contactus .form-main .right-side .inside .btn button:hover {
   background-color: #e0aa73;
   transition: all 0.5s;
   opacity: unset;
+}
+
+@media screen and (max-width: 740px) {
+  .header .mobile-menu-icon {
+    display: block;
+  }
+  .header .menu-item {
+    display: none;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    padding-top: 40px;
+    background: rgba(205, 205, 205, 0.9);
+  }
+  .header .menu-item ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .header .menu-item ul li {
+    font-size: 28px;
+    margin-top: 20px;
+    margin-right: 0;
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .header .menu-item ul li:last-child {
+    margin-bottom: 0;
+  }
+  .header #mobile-menu-switch:checked ~ .menu-item {
+    display: block;
+  }
+  .header #mobile-menu-switch:checked ~ .mobile-menu-icon > div {
+    background-color: #e2974e;
+  }
+  .header #mobile-menu-switch:checked ~ .mobile-menu-icon > div:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 10px;
+  }
+  .header #mobile-menu-switch:checked ~ .mobile-menu-icon > div:nth-child(2) {
+    display: none;
+    transition: unset;
+  }
+  .header #mobile-menu-switch:checked ~ .mobile-menu-icon > div:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  #menu-present {
+    height: 60vh;
+  }
+  #menu-present .form-main {
+    top: 65%;
+  }
+  #menu-present .form-main .context-main {
+    font-size: 80px;
+  }
+  #menu-present .form-main .context-line > div {
+    font-size: 0;
+    width: 44%;
+    height: 1px;
+    background-color: white;
+    margin: 5px 28%;
+  }
+  #menu-present .form-main .context-slogan .text {
+    padding: 0px 10px;
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=stylelist_index.css.map */
