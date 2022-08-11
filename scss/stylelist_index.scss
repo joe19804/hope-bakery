@@ -6,6 +6,10 @@ html,body {
     scroll-padding-top: 80px;
 }
 
+#mobile-menu-switch{
+    display: none;
+}
+
 .header {
     position: fixed;
     background-repeat: no-repeat;
@@ -86,7 +90,7 @@ html,body {
 #menu-present {
     width: 100%;
     height: 80vh;
-    background-image: url(/images/contactus-bg.jpg);
+    background-image: url(/images/contact-us-bg.jpg);
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -418,7 +422,7 @@ html,body {
         position: absolute;
         top: 50%;
         margin-top: -450px;
-        margin-left: 15%;
+        margin-left: 5%;
         margin-bottom: 0;
         width: 80%;
         padding-top: 20px;
@@ -460,8 +464,10 @@ html,body {
 
     .form-down {
         margin-top: 30px;
-        display: flex;  
-        flex-direction: row;
+        display: grid;  
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        height: 100%;
 
         .form-left {
             flex: 1;
@@ -516,7 +522,8 @@ html,body {
 
         .form-center {
             flex: 1;
-            max-height: 100%;
+            max-width: 100%;
+            height: auto;
             background-image: url(/images/feature-center.jpg);
             background-position: 60% 40%;
             background-size: cover;
@@ -565,7 +572,7 @@ html,body {
 
 #menu-product {
     width: 100%;
-    height: 100vh;
+    height: 110vh;
 
     .container {
         max-width: none;
@@ -599,21 +606,21 @@ html,body {
 
         .product-items {
             display: grid;
-            grid-template-columns: 250px 250px 250px;
-            grid-column-gap: 40px;
-            grid-row-gap: 10px;
+            grid-template-columns: repeat(3, 250px);
+            column-gap: 40px;
+            row-gap: 10px;
             justify-content: center;
             margin-top: 20px;
+            padding: 0px 50px;
 
             .product-item {
                 max-width: 100%;
-                height: 100%;
+                max-height: 100%;
                 padding: 0;
                 display: flex;
                 flex-direction: column;
                 text-align: center;
                 font-family: 'Ubuntu', sans-serif;
-                // margin-right: -50px;
 
                 > span {
                     margin-bottom: 15px;
@@ -621,7 +628,10 @@ html,body {
 
 
                 img{
+                    width: 250px;
+                    height: 350px;
                     transform: scale(0.9);
+                    object-fit: cover;
                 }
 
                 .btn {
@@ -656,7 +666,7 @@ html,body {
     height: 80vh;
     top: 0;
     left: 0;
-    background-image: url(/images/contactus-bg.jpg);
+    background-image: url(/images/section-bg.jpg);
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -798,7 +808,7 @@ html,body {
 }
 
 // `md` applies to small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) {
     .header {
         .mobile-menu-icon {
             display: block;
@@ -951,5 +961,75 @@ html,body {
             }
 
         }
+    }
+
+    #menu-feature {
+        height: 200vh;
+        .form-main {
+            padding-top: 0;
+            top: 30%;
+            margin-top: -500px;
+            margin-left: 6%;
+            max-width: 700px;
+            width: calc(100% - 80px);
+            .title {
+                font-size: 40px;
+                margin: 20px 0px;
+            }
+
+            .context-slogan {
+                font-size: 10px;
+            }
+        }
+        .form-down {
+            margin-top: 0;
+            grid-template-columns: 1fr;
+            // grid-auto-rows: 80%;
+            justify-content: center;
+            padding: 0px 40px;
+            height: 100%;
+            .form-left {
+                padding-top: 0;
+            }
+            .form-center {
+                height: 500px;
+            }
+            .form-right {
+                height: 550px;
+                padding: 50px;
+                .min {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+
+    #menu-product {
+        height: 160vh;
+        .container {
+            .product-items {
+                grid-template-columns: repeat(2, 250px);
+            }
+        }
+    }
+
+    #menu-contactus {
+        height: 120vh;
+        background-image: url(/images/section-1.jpg);
+        .form-main {
+            top: 12%;
+            margin-top: -170px;
+            flex-direction: column;
+            padding: 0px 50px;
+            .left-side {
+                margin-bottom: 20px;
+                .context {
+                    margin: 30px 10px;
+                }
+
+            }
+            
+        }
+
     }
 }

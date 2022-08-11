@@ -38,9 +38,6 @@ https://www.aconvert.com/tw/image/avif-to-jpg/
 
 
 --  圖片參考檔
-https://unsplash.com/photos/83JjhKtF-IQ?utm_source=email&utm_medium=referral&utm_content=creditShareLink
-
-https://unsplash.com/photos/WiL53RUTDkQ?utm_source=email&utm_medium=referral&utm_content=creditShareLink
 
 https://unsplash.com/photos/GFhqNX1gE9E?utm_source=email&utm_medium=referral&utm_content=creditShareLink
 
