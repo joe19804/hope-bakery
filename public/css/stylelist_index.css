@@ -124,7 +124,7 @@ html, body {
 
 #menu-present {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   background-image: url(../images/contact-us-bg.jpg);
   background-position: 50% 50%;
   background-size: cover;
@@ -136,7 +136,7 @@ html, body {
 #menu-present .form-main {
   position: absolute;
   top: 50%;
-  margin-top: -250px;
+  margin-top: -220px;
   margin-left: 10%;
   width: 80%;
   height: auto;
@@ -204,7 +204,7 @@ html, body {
 
 #menu-about {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   top: 0;
   left: 0;
   background-color: rgba(255, 255, 255, 0.26);
@@ -215,7 +215,7 @@ html, body {
 #menu-about .form-main {
   position: absolute;
   top: 50%;
-  margin-top: -370px;
+  margin-top: -350px;
   margin-left: 8%;
   width: 80%;
   height: auto;
@@ -310,7 +310,7 @@ html, body {
 
 #menu-advantage {
   width: 100%;
-  height: 70vh;
+  height: 90vh;
   background-image: url(../images/advantage-bg-1.jpg);
   background-position: 100% 64%;
   background-size: cover;
@@ -325,7 +325,7 @@ html, body {
 #menu-advantage .form-main {
   position: absolute;
   top: 55%;
-  margin-top: -300px;
+  margin-top: -250px;
   width: 80%;
   height: 80%;
   display: flex;
@@ -407,7 +407,7 @@ html, body {
 
 #menu-feature {
   width: 100%;
-  height: 100vh;
+  height: 130vh;
   background-color: rgba(205, 205, 205, 0.6);
   position: relative;
   display: block;
@@ -417,7 +417,7 @@ html, body {
   position: absolute;
   top: 50%;
   margin-top: -450px;
-  margin-left: 5%;
+  margin-left: 8%;
   margin-bottom: 0;
   width: 80%;
   padding-top: 20px;
@@ -521,7 +521,7 @@ html, body {
   background-repeat: no-repeat;
   background-size: 50%;
   display: block;
-  padding-top: 15px;
+  padding-top: 26px;
 }
 #menu-feature .form-down .form-right .contant {
   display: flex;
@@ -546,7 +546,7 @@ html, body {
 
 #menu-product {
   width: 100%;
-  height: 110vh;
+  height: 145vh;
 }
 #menu-product .container {
   max-width: none;
@@ -627,7 +627,7 @@ html, body {
 
 #menu-contactus {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   top: 0;
   left: 0;
   background-image: url(../images/section-bg.jpg);
@@ -642,17 +642,14 @@ html, body {
   position: absolute;
   top: 50%;
   margin-top: -350px;
-  margin-left: 15%;
-  width: 70%;
+  width: 100%;
   height: 300px;
   padding: 60px 100px;
   display: flex;
   justify-content: space-between;
 }
-#menu-contactus .form-main > div {
-  flex-basis: 50%;
-}
 #menu-contactus .form-main .left-side {
+  flex: 1;
   margin: 0;
   padding: 0;
 }
@@ -688,11 +685,12 @@ html, body {
   text-align: center;
 }
 #menu-contactus .form-main .right-side {
+  flex: 1;
   padding: 20px;
   display: flex;
   justify-content: center;
   background-color: #F0F2EE;
-  height: 600px;
+  height: 580px;
 }
 #menu-contactus .form-main .right-side .inside {
   padding-top: 60px;
@@ -803,10 +801,10 @@ html, body {
     transform: rotate(-45deg);
   }
   #menu-present {
-    height: 60vh;
+    height: 80vh;
   }
   #menu-present .form-main {
-    top: 65%;
+    top: 60%;
   }
   #menu-present .form-main .context-main {
     font-size: 80px;
@@ -829,12 +827,12 @@ html, body {
     font-size: 20px;
   }
   #menu-about {
-    height: 120vh;
+    height: 170vh;
   }
   #menu-about .form-main {
     flex-direction: column;
     margin-left: 10%;
-    margin-top: -540px;
+    top: 35%;
   }
   #menu-about .form-main .left-side {
     padding: 0;
@@ -855,15 +853,15 @@ html, body {
     padding: 0px 18px 0px 18px;
   }
   #menu-about .form-main .right-side .img {
-    margin: 50px 30px;
+    margin: 50px 10px;
   }
   #menu-advantage {
-    height: 125vh;
+    height: 180vh;
   }
   #menu-advantage .form-main {
     flex-direction: column;
-    top: 25%;
-    margin-top: -440px;
+    top: 12%;
+    margin-top: -300px;
     margin-left: 20%;
     height: 130%;
   }
@@ -874,7 +872,7 @@ html, body {
     margin-top: 20px;
   }
   #menu-feature {
-    height: 200vh;
+    height: 290vh;
   }
   #menu-feature .form-main {
     padding-top: 0;
@@ -905,20 +903,24 @@ html, body {
     height: 500px;
   }
   #menu-feature .form-down .form-right {
-    height: 550px;
-    padding: 50px;
+    height: 450px;
+    max-width: 100%;
+    background-size: contain;
   }
-  #menu-feature .form-down .form-right .min {
-    margin-bottom: 15px;
+  #menu-feature .form-down .form-right .contant {
+    margin-bottom: 10px;
+  }
+  #menu-feature .form-down .form-right .contant .name {
+    margin-top: 5px;
   }
   #menu-product {
-    height: 160vh;
+    height: 240vh;
   }
   #menu-product .container .product-items {
     grid-template-columns: repeat(2, 250px);
   }
   #menu-contactus {
-    height: 120vh;
+    height: 170vh;
     background-image: url(../images/section-1.jpg);
   }
   #menu-contactus .form-main {

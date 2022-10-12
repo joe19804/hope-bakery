@@ -89,7 +89,7 @@ html,body {
 
 #menu-present {
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     background-image: url(../images/contact-us-bg.jpg);
     background-position: 50% 50%;
     background-size: cover;
@@ -101,7 +101,7 @@ html,body {
     .form-main {
         position: absolute;
         top: 50%;
-        margin-top: -250px;
+        margin-top: -220px;
         margin-left: 10%;
         width: 80%;
         height: auto;
@@ -178,7 +178,7 @@ html,body {
 
 #menu-about {
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     top: 0;
     left: 0;
     background-color: rgba(255, 255, 255, 0.26);
@@ -189,7 +189,7 @@ html,body {
     .form-main {
         position: absolute;
         top: 50%;
-        margin-top: -370px;
+        margin-top: -350px;
         margin-left: 8%;
         width: 80%;
         height: auto;
@@ -297,7 +297,7 @@ html,body {
 
 #menu-advantage {
     width: 100%;
-    height: 70vh;
+    height: 90vh;
     background-image: url(../images/advantage-bg-1.jpg);
     background-position: 100% 64%;
     background-size: cover;
@@ -313,7 +313,7 @@ html,body {
     .form-main {
         position: absolute;
         top: 55%;
-        margin-top: -300px;
+        margin-top: -250px;
         width: 80%;
         height: 80%;
         display: flex;
@@ -412,7 +412,7 @@ html,body {
 
 #menu-feature {
     width: 100%;
-    height: 100vh;
+    height: 130vh;
     background-color: rgba(205, 205, 205, 0.6);
     position: relative;
     display: block;
@@ -422,7 +422,7 @@ html,body {
         position: absolute;
         top: 50%;
         margin-top: -450px;
-        margin-left: 5%;
+        margin-left: 8%;
         margin-bottom: 0;
         width: 80%;
         padding-top: 20px;
@@ -540,7 +540,7 @@ html,body {
             background-repeat: no-repeat;
             background-size: 50%;
             display: block;
-            padding-top: 15px;
+            padding-top: 26px;
 
             .contant {
                 display: flex;
@@ -572,7 +572,7 @@ html,body {
 
 #menu-product {
     width: 100%;
-    height: 110vh;
+    height: 145vh;
 
     .container {
         max-width: none;
@@ -663,7 +663,7 @@ html,body {
 
 #menu-contactus {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     top: 0;
     left: 0;
     background-image: url(../images/section-bg.jpg);
@@ -678,18 +678,14 @@ html,body {
         position: absolute;
         top: 50%;
         margin-top: -350px;
-        margin-left: 15%;
-        width: 70%;
+        width: 100%;
         height: 300px;
         padding: 60px 100px;
         display: flex;
         justify-content: space-between;
 
-        >div {
-            flex-basis: 50%;
-        }
-
         .left-side {
+            flex: 1;
             margin: 0;
             padding: 0;
 
@@ -731,17 +727,17 @@ html,body {
         }
 
         .right-side {
+            flex: 1;
             padding: 20px;
             display: flex;
             justify-content: center;
             background-color:  #F0F2EE;
-            height: 600px;
+            height: 580px;
 
             .inside {
                 padding-top: 60px;
                 padding-bottom: 50px;
                 width: 100%;
-                // height: 550px;
                 background-color: #fff;
                 border: 1px solid rgba(22, 21, 19, 0.2);
 
@@ -870,9 +866,9 @@ html,body {
     }
 
     #menu-present {
-        height: 60vh;
+        height: 80vh;
         .form-main {
-            top: 65%;
+            top: 60%;
             .context-main {
                 font-size: 80px;
             }
@@ -907,11 +903,11 @@ html,body {
     }
 
     #menu-about {
-        height: 120vh;
+        height: 170vh;
         .form-main {
             flex-direction: column;
             margin-left: 10%;
-            margin-top: -540px;
+            top: 35%;
             .left-side {
                 padding: 0;
                 .title {
@@ -937,18 +933,19 @@ html,body {
             }
             .right-side {
                 .img {
-                    margin: 50px 30px;
+                    margin: 50px 10px;
+
                 }
             }
         }
     }
 
     #menu-advantage {
-        height: 125vh;
+        height: 180vh;
         .form-main {
             flex-direction: column;
-            top: 25%;
-            margin-top: -440px;
+            top: 12%;
+            margin-top: -300px;
             margin-left: 20%;
             height: 130%;
             .right-side {
@@ -964,7 +961,7 @@ html,body {
     }
 
     #menu-feature {
-        height: 200vh;
+        height: 290vh;
         .form-main {
             padding-top: 0;
             top: 30%;
@@ -984,7 +981,6 @@ html,body {
         .form-down {
             margin-top: 0;
             grid-template-columns: 1fr;
-            // grid-auto-rows: 80%;
             justify-content: center;
             padding: 0px 40px;
             height: 100%;
@@ -995,17 +991,21 @@ html,body {
                 height: 500px;
             }
             .form-right {
-                height: 550px;
-                padding: 50px;
-                .min {
-                    margin-bottom: 15px;
+                height: 450px;
+                max-width: 100%;
+                background-size: contain;
+                .contant {
+                    margin-bottom: 10px;
+                    .name{
+                        margin-top: 5px;
+                    }
                 }
             }
         }
     }
 
     #menu-product {
-        height: 160vh;
+        height: 240vh;
         .container {
             .product-items {
                 grid-template-columns: repeat(2, 250px);
@@ -1014,7 +1014,7 @@ html,body {
     }
 
     #menu-contactus {
-        height: 120vh;
+        height: 170vh;
         background-image: url(../images/section-1.jpg);
         .form-main {
             top: 12%;
