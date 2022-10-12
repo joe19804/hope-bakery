@@ -1,89 +1,269 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.12.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.12.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.12.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.12.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.12.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.12.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.12.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.12.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.12.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.12.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hope bakery</title>
+    <link rel="stylesheet" href="./css/stylelist_index.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/solid.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Coming+Soon&family=Urbanist:wght@100&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../scss/bootstrap.min.css"> -->
+    <!-- <script src="./javascript/bootstrap.min.js"></script> -->
+</head>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+<body>
+    <div class="header">
+        <div class="container">
+            <div>
+                <img class="img-logo" src="./images/logo.png" alt="logo">
+            </div>
+            <input type="checkbox" id="mobile-menu-switch">
+            <label for="mobile-menu-switch" class="mobile-menu-icon">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <div class="menu-item">
+                <ul>
+                    <li><a href="#menu-present" class="link">最新消息</a></li>
+                    <li><a href="#menu-about" class="link">關於我們</a></li>
+                    <li><a href="#menu-advantage" class="link">產品優勢</a></li>
+                    <li><a href="#menu-feature" class="link">產品特色</a></li>
+                    <li><a href="#menu-product" class="link">產品清單</a></li>
+                    <li><a href="#menu-contactus" class="link">聯絡我們</a></li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <div id="menu-present">
+        <div class="form-main">
+            <h1 class="context-main">Hope Bakery</h1>
+            <div class="context-line">
+                <div></div>
+            </div>
+            <div class="context-slogan">
+                <div class="text">
+                    This is Photoshop's version of Lorem Ipsum. Proin graida vel velit auctor aliquet. sem nibh
+                    idretionu retielit.
+                </div>
+            </div>
+            <div class="context-btn">
+                <button>OUR MENU</button>
+            </div>
+        </div>
+    </div>
+    <div id="menu-about">
+        <div class="form-main">
+            <div class="left-side">
+                <h1 class="title">關於我們</h1>
+                <div class="slogan">WE CREATE DELICIOUS MEMORIES</div>
+                <div class="context">Quot alienum persecuti ut eam, nam ad atqui primis nusquam. Numquam verterem
+                    deseruisse cum eu. Mel quaerendum delicatissimi et, ei errem invidunt definitiones nam, ex erat
+                    graeco vim.</div>
+                <div class="img">
+                    <img src="./images/about-cook.jpg" alt="aboutus">
+                </div>
+                <div class="name">chef Amado Gabe</div>
+                <div class="text">Unique bakery creations for unique occasions.</div>
+            </div>
+            <div class="right-side">
+                <div class="img">
+                    <img src="./images/aboutus.jpg" alt="aboutus">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="menu-advantage">
+        <div class="form-main">
+            <div class="left-side">
+            </div>
+            <div class="right-side">
+                <div class="right-top">
+                    <div class="title">我們的優勢</div>
+                    <div class="slogan">SEASON FAVORITE</div>
+                    <div class="context">Phasellus facilisis lectus non erat consequat, sed in suscipit euismod,
+                        urna ante tempor tellus, non ultrices leo est placerat est pellentesque.</div>
+                    <div class="items">
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="right-down">
+                    <div class="circle"><img src="./images/circle-img-1.jpeg" alt=""></div>
+                    <div class="circle"><img src="./images/circle-img-2.jpeg" alt=""></div>
+                    <div class="circle"><img src="./images/circle-img-3.jpeg" alt=""></div>
+                </div>
+            </div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        </div>
+    </div>
+    <div id="menu-feature">
+        <div class="form-main">
+            <div class="main"><img src="./images/feature-bg.png" alt=""></div>
+            <h1 class="title">我們的特色</h1>
+            <div class="context-slogan">THE BEST SANDWICH YOU’VE EVER TASTED!</div>
+            <div class="divider"><img src="./images/divider-brown.png" alt=""></div>
+            <div class="form-down">
+                <div class="form-left">
+                    <div class="left">
+                        <div class="circle">
+                            <img src="./images/circle-img-1.jpeg" alt="">
+                        </div>
+                        <div class="context-container">
+                            <div class="context-title">Class aptent</div>
+                            <div class="context">Quot alienum persecuti ut eam, nam ad atqui primis nusquam.</div>
+                        </div>
+                    </div>
+                    <div class="divider"><img src="./images/divider-brown.png" alt=""></div>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+                    <div class="left">
+                        <div class="circle"><img src="./images/circle-img-2.jpeg" alt=""></div>
+                        <div class="context-container">
+                            <div class="context-title">Nulla eget</div>
+                            <div class="context">Donec congue lacinia dui, a lorem porttitor lectus condim laoreet.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divider"><img src="./images/divider-brown.png" alt=""></div>
+                    <div class="left">
+                        <div class="circle"><img class="circle" src="./images/circle-img-3.jpeg" alt=""></div>
+                        <div class="context-container">
+                            <div class="context-title">Sed nibh purus</div>
+                            <div class="context">Nulla at nulla justo, eget luctus tortor. Nulla facilisi. </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-center"></div>
+                <div class="form-right">
+                    <div class="contant">
+                        <span class="name">PERP</span>
+                        <span class="number">15</span>
+                        <span class="min">mins</span>
+                    </div>
+                    <div class="contant">
+                        <span class="name">COOK</span>
+                        <span class="number">35</span>
+                        <span class="min">mins</span>
+                    </div>
+                    <div class="contant">
+                        <span class="name">READY IN</span>
+                        <span class="number">50</span>
+                        <span class="min">mins</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="menu-product">
+        <div class="container">
+            <ul class="items">
+                <li>All</li>
+                <li class="active">甜點</li>
+                <li class="active">餅乾</li>
+                <li class="active">麵包</li>
+                <li class="active">蛋糕</li>
+                <li class="active">飲品</li>
+            </ul>
+            <div class="product-items">
+                <div class="product-item">
+                    <img src="./images/circle-img-1.jpeg" alt="" class="product-img">
+                    <span class="product-name">甜點</span>
+                    <span class="product-price">NT $250</span>
+                    <div class="btn"><button class="product-btn">查看或購買</button></div>
+                </div>
+                <div class="product-item">
+                    <img src="./images/circle-img-2.jpeg" alt="" class="product-img">
+                    <span class="product-name">餅乾</span>
+                    <span class="product-price">NT $20</span>
+                    <div class="btn"><button class="product-btn">查看或購買</button></div>
+                </div>
+                <div class="product-item">
+                    <img src="./images/product-bread.jpg" alt="" class="product-img">
+                    <span class="product-name">麵包</span>
+                    <span class="product-price">NT $100</span>
+                    <div class="btn"><button class="product-btn">查看或購買</button></div>
+                </div>
+                <div class="product-item">
+                    <img src="./images/product-cake.jpg" alt="" class="product-img">
+                    <span class="product-name">蛋糕</span>
+                    <span class="product-price">NT $500</span>
+                    <div class="btn"><button class="product-btn">查看或購買</button></div>
+                </div>
+                <div class="product-item">
+                    <img src="./images/product-drink.jpg" alt="" class="product-img">
+                    <span class="product-name">飲品</span>
+                    <span class="product-price">NT $70</span>
+                    <div class="btn"><button class="product-btn">查看或購買</button></div>
+                </div>
+                <div class="product-item">
+                    <img src="./images/product-drink-2.jpg" alt="" class="product-img">
+                    <span class="product-name">飲品</span>
+                    <span class="product-price">NT $80</span>
+                    <div class="btn"><button class="product-btn">查看或購買</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="menu-contactus">
+        <div class="form-main">
+            <div class="left-side">
+                <h1 class="title">限時優惠中…</h1>
+                <span class="text">SHOP NOW!</span>
+                <div class="divider">
+                    <img src="./images/divider.png" alt="">
+                </div>
+                <span class="context">Nulla eget ullamcorper ipsum. Vestibulum consectetur quam mi, non fringilla
+                    sodales placerat. Aenean fermentum mollis.</span>
+                <div class="divider">
+                    <img src="./images/divider.png" alt="">
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="inside">
+                    <div class="circle"><img src="./images/circle-img-3.jpeg" alt=""></div>
+                    <div class="hr"></div>
+                    <div class="text">聯絡我們</div>
+                    <div class="context">Nulla eget ullamcorper ipsum. Vestibulum consectetur quam mi, non fringilla
+                        sodales placerat. Aenean fermentum mollis.</div>
+                    <div class="btn"><button>SHOP NOW</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.12.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.12.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyAYADURU2B2FLV5Hn9vbLbQFsRyznvDUvY",
+          authDomain: "hope-bakery.firebaseapp.com",
+          projectId: "hope-bakery",
+          storageBucket: "hope-bakery.appspot.com",
+          messagingSenderId: "530858680678",
+          appId: "1:530858680678:web:2b7b3f127547a06571e8a7",
+          measurementId: "G-8Y6JBHQCSQ"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+
 </html>
